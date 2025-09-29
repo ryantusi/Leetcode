@@ -45,8 +45,9 @@ It does not matter what you leave beyond the returned k (hence they are
 
 class Solution {
     public int removeElement(int[] nums, int val) {
-        int count = 0;
-        for(int i = 0; i < nums.length; i++ ){
+        // Two Pointer Approach
+        int count = 0;  // Slow Pointer
+        for(int i = 0; i < nums.length; i++ ){ // Fast Pointer
             if(nums[i] != val) {
                 nums[count] = nums[i];
                 count++;
