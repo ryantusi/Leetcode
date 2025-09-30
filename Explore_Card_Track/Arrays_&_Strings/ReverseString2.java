@@ -29,7 +29,7 @@
 
 public class ReverseString2 {
     public String reverseWords(String s) {
-        String[] words = s.split("\\s+");
+        String[] words = s.trim().split("\\s+");
         int left = 0, right = words.length - 1;
         String temp = "";
 
